@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: springcloud-config-client
+
+eureka:
+  instance:
+    hostname: config-client
+    ip-address: 127.0.0.1
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9110/eureka/
